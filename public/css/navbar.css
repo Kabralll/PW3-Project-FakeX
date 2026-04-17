@@ -1,0 +1,49 @@
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ===== ITEM ===== */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    background-color: #181818;
+}
+
+/* ===== ÍCONES ===== */
+.nav-item i {
+    font-size: 22px;
+}
+
+/* ===== TEXTO ===== */
+.nav-item span {
+    font-weight: 500;
+}
+
+
+.tweet-btn:hover {
+    background-color: #1a8cd8;
+}
+
+/* ===== RESPONSIVO NAVBAR ===== */
+@media (max-width: 800px) {
+    .nav-item span {
+        display: none;
+    }
+
+    .tweet-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

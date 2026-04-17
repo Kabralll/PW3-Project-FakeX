@@ -1,0 +1,88 @@
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #e7e9ea;
+}
+
+/* ===== CENTER WRAPPER ===== */
+.auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CARD ===== */
+.auth-card {
+    width: 380px;
+    border: 1px solid #2f3336;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: #000;
+}
+
+/* TITLE */
+.auth-card h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+/* INPUTS */
+.auth-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+
+    background: transparent;
+    border: 1px solid #2f3336;
+    border-radius: 8px;
+
+    color: #e7e9ea;
+    outline: none;
+}
+
+.auth-card input:focus {
+    border-color: #1d9bf0;
+}
+
+/* BUTTON */
+.auth-card button {
+    width: 100%;
+    padding: 12px;
+
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-card button:hover {
+    background-color: #1a8cd8;
+}
+
+/* SWITCH LINK */
+.switch {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #71767b;
+}
+
+.switch a {
+    color: #1d9bf0;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,117 @@
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #e7e9ea;
+}
+
+/* ===== BACKGROUND ===== */
+.background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.15; /* makes it feel like background layer */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bg-logo {
+    font-size: 120px;
+    font-weight: 800;
+}
+
+/* ===== MODAL OVERLAY ===== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    width: 380px;
+    background-color: #000;
+    border: 1px solid #2f3336;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+/* title */
+.login-card h2 {
+    margin-bottom: 24px;
+}
+
+/* inputs */
+.login-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+
+    background: transparent;
+    border: 1px solid #2f3336;
+    border-radius: 8px;
+
+    color: #e7e9ea;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #1d9bf0;
+}
+
+/* button */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 9999px;
+
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-card button:hover {
+    background-color: #1a8cd8;
+}
+
+/* links */
+.small-link {
+    display: block;
+    margin-top: 12px;
+    color: #1d9bf0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #71767b;
+}
+
+.signup-text a {
+    color: #1d9bf0;
+    text-decoration: none;
+}
